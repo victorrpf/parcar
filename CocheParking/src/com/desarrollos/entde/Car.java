@@ -26,10 +26,10 @@ public class Car
      * Method that is being always invoked when the program is running
      * @throws InterruptedException 
      */
-    public static void main(string[] args) throws InterruptedException{
+    public static void main(String[] args) throws InterruptedException{
     	Garage g = new Garage();
     	Car car = new Car(g);
-        accelerate();
+        car.accelerate();
         slowDown();
         moveDown();
         accelerate();
@@ -44,9 +44,9 @@ public class Car
      * @throws InterruptedException 
      */
     public void accelerate() throws InterruptedException{
-        string c = new string("*");
-        string space = new string(" ");
-    	for(int i=0, i<5; i++)
+        String c = new String("*");
+        String space = new String(" ");
+    	for(int i=0; i<5; i++)
         {
         	System.out.print(c);
         	c = space.concat(c);
